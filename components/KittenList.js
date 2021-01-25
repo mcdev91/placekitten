@@ -1,8 +1,4 @@
-import * as React from 'react';
-import {View, StyleSheet, Image } from 'react-native';
-import Constants from 'expo-constants';
-
-const array = [
+const kittenListArray = [
     "http://placekitten.com/g/?C=N;O=D",
     "http://placekitten.com/g/?C=M;O=A",
     "http://placekitten.com/g/?C=S;O=A",
@@ -9241,31 +9237,3 @@ const array = [
     "http://placekitten.com/g/9999999999/",
     "http://placekitten.com/g/999999999999999999/"
 ]
-
-export default class KittenList extends React.Component {
-    render() {
-      return array.map((image) => {
-        return (
-          <View>
-            <Image style={{ width: 350, height: 300 }} source={{ image }} />
-          </View>);
-      });
-    }
-  }
-  
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: 'center',
-      paddingTop: Constants.statusBarHeight,
-      backgroundColor: '#ecf0f1',
-      padding: 8,
-    },
-    paragraph: {
-      margin: 24,
-      fontSize: 18,
-      fontWeight: 'bold',
-      textAlign: 'center',
-    },
-  });
-  

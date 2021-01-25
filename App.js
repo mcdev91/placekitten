@@ -18,13 +18,12 @@ export default class App extends Component {
       <ScrollView>
         <Header />
         <Buttons />
-        <KittenList />
-        {/* <View style={styles.container}>
+        <View style={styles.container}>
           <Image
             source={{ uri: imgUri }}
             style={styles.image}
           />
-        </View> */}
+        </View>
       </ScrollView>
     )
   }
